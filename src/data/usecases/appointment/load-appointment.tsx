@@ -1,5 +1,5 @@
 import { InstanceDatabaseClient  } from '@/data/protocols/instance-database'
-import { LoadAppointment } from '@/domain/usecases'
+import { LoadAppointment } from '@/domain/usecases/appointment'
 
 export class RemoteLoadAppointment implements LoadAppointment {
   constructor (

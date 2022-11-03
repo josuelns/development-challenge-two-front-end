@@ -1,5 +1,5 @@
 import { InstanceDatabaseClient  } from '@/data/protocols/instance-database'
-import { SearchDateIntervalAppointment } from '@/domain/usecases'
+import { SearchDateIntervalAppointment } from '@/domain/usecases/appointment'
 
 export class RemoteSearchDateIntervalAppointment implements SearchDateIntervalAppointment {
   constructor (

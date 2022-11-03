@@ -1,5 +1,5 @@
 import { InstanceDatabaseClient  } from '@/data/protocols/instance-database'
-import { RemoveAppointment } from '@/domain/usecases'
+import { RemoveAppointment } from '@/domain/usecases/appointment'
 
 export class RemoteRemoveAppointment implements RemoveAppointment {
   constructor (

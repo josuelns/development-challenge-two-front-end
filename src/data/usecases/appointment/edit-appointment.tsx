@@ -1,5 +1,5 @@
 import { InstanceDatabaseClient  } from '@/data/protocols/instance-database'
-import { EditAppointment } from '@/domain/usecases'
+import { EditAppointment } from '@/domain/usecases/appointment'
 
 export class RemoteEditAppointment implements EditAppointment {
   constructor (

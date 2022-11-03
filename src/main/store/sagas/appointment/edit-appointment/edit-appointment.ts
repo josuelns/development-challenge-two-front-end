@@ -1,7 +1,7 @@
 import { all, call, put, takeLatest } from '@redux-saga/core/effects'
 import { EditAppointment } from '~/domain/usecases'
-import { editAppointmentFailure, editAppointmentSuccess, loadAppointmentRequest } from '../../actions'
-import * as types from '../../types'
+import { editAppointmentFailure, editAppointmentSuccess, loadAppointmentRequest } from '../../../actions'
+import * as types from '../../../types'
 import {
     makeRemoteEditAppointment
 } from '~/main/factories/usecases'

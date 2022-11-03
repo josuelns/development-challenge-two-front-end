@@ -1,10 +1,10 @@
 import { all, call, put, takeLatest } from '@redux-saga/core/effects'
-import { ListAppointment } from '~/domain/usecases'
-import { listAppointmentFailure, listAppointmentSuccess } from '../../actions'
-import * as types from '../../types'
+import { ListAppointment } from '@/domain/usecases/appointment'
+import { listAppointmentFailure, listAppointmentSuccess } from '../../../actions'
+import * as types from '../../../types'
 import {
     makeRemoteRemoteListAppointments
-} from '~/main/factories/usecases'
+} from '@/main/factories/usecases'
 
 let response: ListAppointment.Model
 
