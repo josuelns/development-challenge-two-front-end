@@ -1,4 +1,4 @@
-import { AppointmentModel } from '@/domain/models/appointment'
+import { AppointmentResponseModel } from '@/domain/models/appointment'
 
 export interface SearchDateIntervalAppointment {
   dateInterval: (params: SearchDateIntervalAppointment.Params) => Promise<SearchDateIntervalAppointment.Model>
@@ -10,5 +10,5 @@ export namespace SearchDateIntervalAppointment {
     ending_date: string,
   }
 
-  export type Model = Array<AppointmentModel>
+  export type Model = AppointmentResponseModel
 }

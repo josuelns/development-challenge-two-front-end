@@ -1,4 +1,4 @@
-import { AppointmentAddModel } from '@/domain/models/appointment'
+import { AppointmentResponseModel } from '@/domain/models/appointment'
 
 export interface AddAppointment {
   add: (params: AddAppointment.Params) => Promise<AddAppointment.Model>
@@ -11,5 +11,5 @@ export namespace AddAppointment {
     ending_date: string,
   }
 
-  export type Model = AppointmentAddModel
+  export type Model = AppointmentResponseModel
 }

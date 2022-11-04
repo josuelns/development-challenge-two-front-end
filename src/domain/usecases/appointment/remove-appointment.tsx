@@ -1,4 +1,4 @@
-import { AppointmentRemoveModel } from '@/domain/models/appointment'
+import { AppointmentResponseModel } from '@/domain/models/appointment'
 
 export interface RemoveAppointment {
   remove : (params: RemoveAppointment.Params) => Promise<RemoveAppointment.Model>
@@ -9,5 +9,5 @@ export namespace RemoveAppointment {
     id: string,
   }
 
-  export type Model = AppointmentRemoveModel
+  export type Model = AppointmentResponseModel
 }
