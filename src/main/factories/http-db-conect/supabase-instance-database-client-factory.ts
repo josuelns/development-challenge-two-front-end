@@ -1,3 +1,3 @@
-import { SupabaseInstanceDatabaseClient } from '@/infra/instance-database'
+import { SupabaseInstanceDatabaseClient } from '@/infra/api'
 
 export const makeSupabaseInstanceDatabaseClient = new SupabaseInstanceDatabaseClient

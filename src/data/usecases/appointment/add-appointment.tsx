@@ -1,12 +1,12 @@
-import { InstanceDatabaseClient  } from '@/data/protocols/instance-database'
+import { ApiClient  } from '@/data/protocols/api'
 import { AddAppointment } from '@/domain/usecases/appointment'
 
 export class RemoteAddAppointment implements AddAppointment {
   constructor (
-    private readonly InstanceDatabaseClient: InstanceDatabaseClient<unknown>
+    private readonly ApiClient: ApiClient<unknown>
   ) {}
 
   async add (params: AddAppointment.Params): Promise<AddAppointment.Model> {
-    return await this.InstanceDatabaseClient.addAppointment(params)
+    return await this.ApiClient.addAppointment(params)
   }
 }

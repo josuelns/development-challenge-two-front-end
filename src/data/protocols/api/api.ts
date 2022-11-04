@@ -8,7 +8,7 @@ import {
   SearchDateIntervalAppointment 
 } from "@/domain/usecases/appointment"
 
-export interface InstanceDatabaseClient<T> {
+export interface ApiClient<T> {
   getClient: () => Promise<T | undefined>
   addAppointment: (params: AddAppointment.Params) => Promise<AddAppointment.Model>
   editAppointment: (params: EditAppointment.Params) => Promise<EditAppointment.Model>

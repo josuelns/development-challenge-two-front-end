@@ -1,5 +1,5 @@
 import { createClient, SupabaseClient } from "supabase/supabase-js";
-import { InstanceDatabaseClient } from "@/data/protocols/instance-database/instance-database";
+import { ApiClient } from "@/data/protocols/api/api";
 import { 
   AddAppointment, 
   EditAppointment, 
@@ -9,7 +9,7 @@ import {
   SearchDateIntervalAppointment
 } from "@/domain/usecases/appointment";
 
-export class SupabaseInstanceDatabaseClient implements InstanceDatabaseClient<SupabaseClient> {
+export class SupabaseApiClient implements ApiClient<SupabaseClient> {
 
   async getClient () {
     try {
