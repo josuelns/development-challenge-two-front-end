@@ -1,4 +1,4 @@
-import { CreditModel } from "./credits-model"
+import { CreditModel } from "./credit-model"
 
 export type CreditResponseModel = {
   data: any
