@@ -6,7 +6,7 @@ import {
   RemoveAppointment, 
   SearchAppointment, 
   SearchDateIntervalAppointment 
-} from "@/domain/usecases"
+} from "@/domain/usecases/appointment"
 
 export interface InstanceDatabaseClient<T> {
   getClient: () => Promise<T | undefined>

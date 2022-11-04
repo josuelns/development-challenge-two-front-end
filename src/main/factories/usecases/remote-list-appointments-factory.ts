@@ -1,3 +1,3 @@
-import {RemoteListAppointments} from '@/data/usecases'
+import {RemoteListAppointments} from '@/data/usecases/appointment'
 
 export const makeRemoteRemoteListAppointments = new RemoteListAppointments()

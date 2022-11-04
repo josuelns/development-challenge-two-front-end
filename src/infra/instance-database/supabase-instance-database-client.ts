@@ -7,7 +7,7 @@ import {
   RemoveAppointment, 
   SearchAppointment,
   SearchDateIntervalAppointment
-} from "@/domain/usecases";
+} from "@/domain/usecases/appointment";
 
 export class SupabaseInstanceDatabaseClient implements InstanceDatabaseClient<SupabaseClient> {
 
