@@ -1,0 +1,5 @@
+export * from './add-patient'
+export * from './edit-patient'
+export * from './remove-patient'
+export * from './search-patient'
+export * from './view-patient'
