@@ -1,6 +1,6 @@
 import { AuthenticationModel } from "./authentication-model"
 
 //todo
-export type AppointmentResponseModel = {
+export type AuthenticationResponseModel = {
   data: any
 }
