@@ -1,0 +1,5 @@
+export * from './add-doctor'
+export * from './edit-doctor'
+export * from './remove-doctor'
+export * from './search-doctor'
+export * from './view-doctor'
